@@ -7,9 +7,9 @@ body {
 #page {
     /* 최대, 최소 너비값 지정 */
     max-width: 940px;
-    min-width: 720px;
+    min-width: 640px;
     /* margin의 오른쪽, 왼쪽을 자동으로 설정 = 자동정렬 시키는 개념. */
-    margin: 10px auto 10px auto;
+    margin: 10px auto;
     padding: 20px;
     border: 4px double #000;
     background-color: #ffffff;
