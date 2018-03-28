@@ -1,38 +1,27 @@
 body {
-    margin : 8px;
+    margin: 8px;
 }
 h1 {
-    margin : 21px 0px;
-    font-size : 2em;
+    font-size: 2em;
+    margin : 20px 0px;
 }
 h2 {
     font-size : 1.5em;
-    margin : 20px 0px;
+    margin: 20px 0px;
+}
+ul {
+    margin: auto 40px;
 }
 h3 {
-    font-size : 1.15em;
+    margin: 20px 0px;
+    font-size: 1.15em;
 }
-nav {
-    margin : 20px 40px;
-}
-#description {
-    margin : 20px 0px;
-}
-article p{
-    margin : 15px 0px;
+p {
+    margin: 15px 0px;
 }
 figure {
-    margin-left : 40px;
+    margin: 0px 40px;
 }
 figcaption {
     font-style: italic;
-}
-#relatedPhotos {
-    margin : 20px 0px;
-}
-#reviews {
-    margin : 20px 0px;
-}
-footer p {
-    margin : 16px 0px;
 }

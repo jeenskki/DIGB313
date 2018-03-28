@@ -1,0 +1,54 @@
+body {
+    font-size : 80%;
+    font-family : 'Courier New', Courier, monospace;
+    letter-spacing: 0.15em; /* 자간 설정 */
+    background-color: #efefef; 
+} 
+#page {
+    /* 최대, 최소 너비값 지정 */
+    max-width: 940px;
+    min-width: 720px;
+    /* margin의 오른쪽, 왼쪽을 자동으로 설정 = 자동정렬 시키는 개념. */
+    margin: 10px auto 10px auto;
+    padding: 20px;
+    border: 4px double #000;
+    background-color: #ffffff;
+}
+#logo {
+    /* 로고 너비 설정 */
+    width: 150px;
+    /* 로고가 좌우 정렬되도록 auto 설정 부여 */
+    margin: 10px auto 25px auto;
+}
+ul {
+    /* unordered list의 설정만 부여. list는 하단에 */
+    width: 570px;
+    padding: 15px;
+    margin: 0px auto;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+li {
+    /* 줄바꿈 없도록 설정 */
+    display: inline;
+    margin: 0px 3px;
+}
+p {
+    text-align: center;
+    width: 600px;
+    margin: 20px auto 20px auto;
+    /* font-weight를 bold나 숫자(100~900)로 지정하여 굵기 조절 가능 */
+    font-weight: normal;
+}
+a {
+    color: #000000;
+    text-transform: uppercase;
+    /* 원래 a 태그 밑에는 밑줄이 쳐지는데, 이거 없애려고 none을 명시 */
+    text-decoration: none;
+    padding : 6px 18px 5px 18px;
+}
+a:hover, a.on {
+    color : #cc3333;
+    background-color: #ffffff;
+}
