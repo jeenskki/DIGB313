@@ -3,6 +3,3 @@
 
 ## Contents
 Homeworks for webApplicaton I
-
-## etc
-.DS_Store는 의미없는 파일이므로 무시해도 무방
