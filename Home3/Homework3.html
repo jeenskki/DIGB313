@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>Homework 3</title>
+   <link rel="stylesheet" href="css/reset.css" />
+   <link rel="stylesheet" href="css/Homework3.css" />
+</head>
+<body>
+    <fieldset class="main">
+        <legend>Photo Details</legend>
+        <form action="http://randyconnolly.com/tests/process.php" method="get">
+        <div class="body">
+            <div class="first">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" />
+                <label for="description">Description</label>
+                <textarea name="description" id="description" rows="8"></textarea>
+            </div>
+            <div class="second">
+                <div class="location">
+                    <label for="continent">Continent</label>
+                    <select name="continent" id="continent">
+                        <option value="">Choose Continent</option>
+                        <option value="North America">North America</option>
+                        <option value="South America">South America</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Oceania">Oceania</option>
+                        <option value="Africa">Africa</option>
+                    </select>
+                    <label for="Country">Country</label>
+                    <select name="country" id="country">
+                        <option value="Canada">Canada</option>
+                        <option value="United States">United States</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Chile">Chile</option>
+                    </select>
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="buttons">
+                    <fieldset class="copy">
+                        <label for="copyright" id="label_copy">Copyright?</label>
+                        <input type="radio" name="copyright" value="1"> All Rights Reserved <br/>
+                        <input type="radio" name="copyright" value="2" checked="checked"> Creative Commons
+                    </fieldset>
+                    <fieldset class="CC_type">
+                        <label for="CC" id="label_CC">Creative Commons Types</label>
+                        <input type="checkbox" name="CC" value="on"> Attribution <br/>
+                        <input type="checkbox" name="CC" value="on"> Noncommercial <br/>
+                        <input type="checkbox" name="CC" value="on"> No Derivative Works <br/>
+                        <input type="checkbox" name="CC" value="on"> Share Alike
+                    </fieldset>
+                </div>
+            </div>
+            <div class="third">
+                <div class="accept"> I accept the software license
+                    <input type="checkbox" name="accept" value="on">    
+                </div>
+                <div class="rateAndColor">
+                    <label for="rate" id="label_rate">Rate this photo:</label>
+                    <input type="number" min="0" max="10" name="rate">
+                    <label for="color" id="label_color">Color Collection:</label>
+                    <input type="color" name="color">
+                </div>
+                <fieldset class="dateAndTime">
+                    <label for="date">Date Taken:</label>
+                    <input type="date" name="date">
+                    <label for="time">Time Taken:</label>
+                    <input type="time" name="time">
+                </fieldset>
+            </div>
+            <div class="submitButtons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clean Form">
+            </div>
+        </div>
+        </form>
+    </fieldset>
+</body>
+</html>
