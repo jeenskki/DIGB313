@@ -13,9 +13,9 @@
         <div class="body">
             <div class="first">
                 <label for="title">Title</label>
-                <input type="text" name="title" id="title" />
+                <input type="text" name="title" id="title" required>
                 <label for="description">Description</label>
-                <textarea name="description" id="description" rows="8"></textarea>
+                <textarea name="description" id="description" rows="8" required></textarea>
             </div>
             <div class="second">
                 <div class="location">
@@ -39,7 +39,7 @@
                         <option value="Chile">Chile</option>
                     </select>
                     <label for="city">City</label>
-                    <input type="text" name="city" id="city">
+                    <input type="text" name="city" id="city" required>
                 </div>
                 <div class="buttons">
                     <fieldset class="copy">
@@ -58,19 +58,19 @@
             </div>
             <div class="third">
                 <div class="accept"> I accept the software license
-                    <input type="checkbox" name="accept" value="on">    
+                    <input type="checkbox" name="accept" value="on" required>    
                 </div>
                 <div class="rateAndColor">
                     <label for="rate" id="label_rate">Rate this photo:</label>
-                    <input type="number" min="0" max="10" name="rate">
+                    <input type="number" min="0" max="10" name="rate" required>
                     <label for="color" id="label_color">Color Collection:</label>
                     <input type="color" name="color">
                 </div>
                 <fieldset class="dateAndTime">
                     <label for="date">Date Taken:</label>
-                    <input type="date" name="date">
+                    <input type="date" name="date" required>
                     <label for="time">Time Taken:</label>
-                    <input type="time" name="time">
+                    <input type="time" name="time" required>
                 </fieldset>
             </div>
             <div class="submitButtons">
