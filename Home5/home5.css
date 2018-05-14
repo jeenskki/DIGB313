@@ -1,0 +1,28 @@
+h1 {
+    width: 700px;
+    text-align-last: center;
+}
+#root {
+    width: 700px;  
+    height: 600px;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+
+#square {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+}
+
+.add-square, .change-color {
+    margin: 10px 5px 0px 2px;
+    width: 100px;
+    height: 30px;
+    background-color: #81a1c1;
+    border: 1px solid #5191c1;
+    font-size: 0.8em;
+    text-align: center;
+}
