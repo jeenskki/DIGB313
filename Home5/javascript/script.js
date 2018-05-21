@@ -11,24 +11,25 @@ function getRandomColor() {
   return "#" + ("000000" + hex.toString(16)).substr(-6);
 }
 
-// div 박스 생성 및 onclick 이벤트 부여
+// div 박스 생성
 function addBox() {
   let box = document.createElement('div');
   let randomTopPosition = Math.floor(Math.random() * 460 + 80);
   let randomLeftPosition = Math.floor(Math.random() * 640);
 
-  //dynamic
+  // dynamic
   box.classList.add('box',`box--${count}`);
   box.style.backgroundColor = getRandomColor();
   box.style.top = `${randomTopPosition}px`;
   box.style.left = `${randomLeftPosition}px`;
   box.style.zIndex = count;
 
-  //append box
+  // append box
   rootNode.appendChild(box);
 
   count++;
   
+  // on-click event
   box.addEventListener('click', refreshBox);
 
 }
