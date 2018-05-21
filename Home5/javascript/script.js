@@ -1,35 +1,46 @@
-var addBox;
-var color;
-var count= 0;
-var randomTop = 0;
-var randomLeft = 0;
-var position;
-
-
-document.querySelector('.add-square').addEventListener('click', add);
-document.querySelector('.change-color').addEventListener('click',change);
-
 function getRandomColor() {
-    var hex = Math.floor(Math.random() * 0xFFFFFF);
-    return "#" + ("000000" + hex.toString(16)).substr(-6);
+  let hex = Math.floor(Math.random() * 0xFFFFFF);
+  return "#" + ("000000" + hex.toString(16)).substr(-6);
 }
-function randomPosition() {
-    randomTop = Math.floor(Math.random() * 540) + "px";
-    randomLeft = Math.floor(Math.random() * 640) + "px";
-    return "margin-top:"+randomTop+"; margin-left:"+randomLeft+";";
+
+let count = 0;
+const rootNode = document.querySelector('#root');
+
+document.querySelector('.add-box').addEventListener('click', addBox);
+
+document.querySelector('.change-color').addEventListener('click', changeBox);
+
+function addBox() {
+  let box = document.createElement('div');
+  let randomTopPosition = Math.floor(Math.random() * 540);
+  let randomLeftPosition = Math.floor(Math.random() * 640);
+
+  //dynamic
+  box.classList.add('box',`box--${count}`);
+  box.style.backgroundColor = getRandomColor();
+  box.style.top = `${randomTopPosition}px`;
+  box.style.left = `${randomLeftPosition}px`;
+  box.style.zIndex = count;
+  
+  //append box
+  document.getElementById('root').appendChild(box);
+
+  count++;
+
+  box.addEventListener('click', refreshBox);
 }
-function add(){
-    color = getRandomColor();
-    position = randomPosition();
-    addBox = document.createElement('div');
-    addBox.setAttribute('id','square'+count);
-    addBox.setAttribute('style', 'position: absolute; width: 60px; height: 60px; border: 1px solid #ddd; background:'+color+"; z-index="+count+";"+position);
-    document.getElementById('root').appendChild(addBox);
-    count++;
+
+function changeBox() {
+  for (let i = 0; i < count; i++) {
+    const target = document.querySelector(`.box--${i}`);
+    target.style.backgroundColor = getRandomColor();
+  }
 }
-function change() {
-    for(var i=0; i<count; i++) {
-        color = getRandomColor();
-        document.getElementById('square'+i).style.background = color;
-    }
+
+function refreshBox() {
+  const target = event.srcElement;
+  if (target.style.zIndex >= count) {
+    rootNode.removeChild(target);
+  }
+  target.style.zIndex = count + 1;
 }
