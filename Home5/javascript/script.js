@@ -1,5 +1,4 @@
 let count = 0;
-let z = 0;
 const rootNode = document.querySelector('#root');
 
 document.querySelector('.add-box').addEventListener('click', addBox);
