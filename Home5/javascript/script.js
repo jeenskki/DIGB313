@@ -45,4 +45,5 @@ function refreshBox() {
     rootNode.removeChild(target);
   }
   target.style.zIndex = count;
+  count++;
 }
