@@ -44,9 +44,7 @@ function addBox() {
 function changeBox() {
   let targets = document.querySelectorAll('.box');
   for (let i = 0; i <= targets.length; i++) {
-    if (targets[i]) {
-      targets[i].style.backgroundColor = getRandomColor();      
-    }
+    targets[i].style.backgroundColor = getRandomColor();      
   }
 }
 
