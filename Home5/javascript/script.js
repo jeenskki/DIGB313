@@ -1,4 +1,5 @@
 let count = 0;
+
 const rootNode = document.querySelector('#root');
 
 document.querySelector('.add-box').addEventListener('click', addBox);
@@ -25,10 +26,9 @@ function addBox() {
   //append box
   rootNode.appendChild(box);
 
-  count++;
-  
   box.addEventListener('click', refreshBox);
-
+  
+  count++;
 }
 
 // 박스 색상 변경
@@ -46,6 +46,4 @@ function refreshBox() {
     rootNode.removeChild(target);
   }
   target.style.zIndex = count;
-  count++;
 }
-//박스 제거 후 색상 변경 오류. 수정 필요
