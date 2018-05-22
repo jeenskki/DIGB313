@@ -28,18 +28,11 @@ function addBox() {
   // append box
   rootNode.appendChild(box);
 
-<<<<<<< HEAD
-=======
-  count++;
-  
-  // on-click event
->>>>>>> 8a7771a8e331da7bd2162f3c01632f5b0fa4540d
   box.addEventListener('click', refreshBox);
   
   count++;
 }
 
-<<<<<<< HEAD
 // 박스 색상 변경
 // function changeBox() {
 //   for (let i = 0; i <= count; i++) {
@@ -47,9 +40,7 @@ function addBox() {
 //     target.style.backgroundColor = getRandomColor();
 //   }
 // }
-=======
-// 박스 색상 변경. 박스 제거 후 이벤트 오작동
->>>>>>> 8a7771a8e331da7bd2162f3c01632f5b0fa4540d
+
 function changeBox() {
   let targets = document.querySelectorAll('.box');
   for (let i = 0; i <= targets.length; i++) {
@@ -66,9 +57,4 @@ function refreshBox() {
     rootNode.removeChild(target);
   }
   target.style.zIndex = count;
-<<<<<<< HEAD
 }
-=======
-  count++;
-}
->>>>>>> 8a7771a8e331da7bd2162f3c01632f5b0fa4540d
