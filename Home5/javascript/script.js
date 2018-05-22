@@ -32,10 +32,18 @@ function addBox() {
 }
 
 // 박스 색상 변경
+// function changeBox() {
+//   for (let i = 0; i <= count; i++) {
+//     const target = document.querySelector(`.box--${i}`);
+//     target.style.backgroundColor = getRandomColor();
+//   }
+// }
 function changeBox() {
-  for (let i = 0; i <= count; i++) {
-    const target = document.querySelector(`.box--${i}`);
-    target.style.backgroundColor = getRandomColor();
+  let targets = document.querySelectorAll('.box');
+  for (let i = 0; i <= targets.length; i++) {
+    if (targets[i]) {
+      targets[i].style.backgroundColor = getRandomColor();      
+    }
   }
 }
 
