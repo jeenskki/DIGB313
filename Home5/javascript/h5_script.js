@@ -1,4 +1,5 @@
 let count = 0;
+let z = 1;
 
 const rootNode = document.querySelector('#root');
 
@@ -15,22 +16,20 @@ function getRandomColor() {
 // div 박스 생성
 function addBox() {
   let box = document.createElement('div');
-  let randomTopPosition = Math.floor(Math.random() * 460 + 80);
-  let randomLeftPosition = Math.floor(Math.random() * 640);
+  let randomTopPosition = Math.floor(Math.random() * 510 + 80);
+  let randomLeftPosition = Math.floor(Math.random() * 630 + 10);
 
   // dynamic
-  box.classList.add('box',`box--${count}`);
+  box.classList.add('box',`box--${count++}`);
   box.style.backgroundColor = getRandomColor();
   box.style.top = `${randomTopPosition}px`;
   box.style.left = `${randomLeftPosition}px`;
-  box.style.zIndex = count;
+  box.style.zIndex = 0;
 
   // append box
   rootNode.appendChild(box);
 
   box.addEventListener('click', refreshBox);
-  
-  count++;
 }
 
 // 박스 색상 변경
@@ -45,12 +44,14 @@ function changeBox() {
   }
 }
 
-
 // 박스 클릭 시 이벤트 설정
 function refreshBox() {
   const target = event.srcElement;
-  if (target.style.zIndex >= count) {
+  if (target.style.zIndex >= z) {
     rootNode.removeChild(target);
+    z--;
+  } else {
+    target.style.zIndex = ++z;
   }
-  target.style.zIndex = count;
 }
+
