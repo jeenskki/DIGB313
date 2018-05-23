@@ -34,19 +34,17 @@ function addBox() {
 }
 
 // 박스 색상 변경
-// function changeBox() {
+function changeBox() {
 //   for (let i = 0; i <= count; i++) {
 //     const target = document.querySelector(`.box--${i}`);
 //     target.style.backgroundColor = getRandomColor();
 //   }
-// }
-
-function changeBox() {
   let targets = document.querySelectorAll('.box');
   for (let i = 0; i <= targets.length; i++) {
     targets[i].style.backgroundColor = getRandomColor();      
   }
 }
+
 
 // 박스 클릭 시 이벤트 설정
 function refreshBox() {
