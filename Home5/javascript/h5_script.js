@@ -1,6 +1,6 @@
 let count = 0;
 let z = 1;
-
+let loadBoxCount = Math.floor(Math.random() * 21 + 30);
 const rootNode = document.querySelector('#root');
 
 document.querySelector('.add-box').addEventListener('click', addBox);
@@ -55,3 +55,9 @@ function refreshBox() {
   }
 }
 
+// 페이지 로드 시 박스 생성. Anonymous function 사용
+window.onload = function() {
+  for (let i = 0; i <= loadBoxCount; i++) {
+    event.initEvent(addBox(), true, true);
+  }
+}
