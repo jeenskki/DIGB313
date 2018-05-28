@@ -1,6 +1,6 @@
 let count = 0;
 let z = 1;
-let loadBoxCount = Math.floor(Math.random() * 21 + 30);
+let loadBoxCount = Math.floor((Math.random() * 21) + 30);
 const rootNode = document.querySelector('#root');
 
 document.querySelector('.add-box').addEventListener('click', addBox);
