@@ -35,22 +35,6 @@ $(document).ready(() => {
   for (let i = 0; i <= loadBox; i++) {
     $('.add-box').trigger('click');
   }
-  $dragging = null;
-
-  $(document.body).on('mousemove', (e) => {
-    if ($dragging) {
-      $dragging.offset({
-        top: e.pageY,
-        left: e.pageX
-      });
-    }
-  });
-  $(document.body).on('mousedown', '.box', (e) => {
-    $dragging = $(e.target);
-  });
-  $(document.body).on('mouseup', '.box', (e) {
-    $dragging = null;
-  });
 });
 
 $(document).on('click', '.box', (e) => {
