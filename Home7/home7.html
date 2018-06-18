@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homework 7</title>
+    <link rel="stylesheet" href="css/home7.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCG4_LhlcN-nXQlvlBOzfTPNq0DBe0IkMU&libraries=places"></script>
+  </head>
+  <body>
+    <h1>Homework 7</h1>
+    <input id="searchInput" class="controls" type="text" placeholder="Enter a location">
+    <div id="map"></div>
+    <ul id="geoData">
+        <li>Full Address: <span id="location"></span></li>
+        <li>Postal Code: <span id="postal_code"></span></li>
+        <li>Country: <span id="country"></span></li>
+        <li>Latitude: <span id="lat"></span></li>
+        <li>Longitude: <span id="lon"></span></li>
+    </ul>
+    <script src="script/home7.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap" async defer></script>
+  </body>
+</html>
