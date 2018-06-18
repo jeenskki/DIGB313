@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <a href="#mainPage" class="navbar-brand"><h2 id="mainPage"><strong>DARTS</strong></h2></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <il class="navbar-nav ml-auto text-center">
+          <li class="nav-item active">
+            <a href="#dart1" class="nav-link">Dart is...</a>
+          </li>
+          <li class="nav-item">
+            <a href="#dart2" class="nav-link">How to Play</a>
+          </li>
+          <li class="nav-item">
+            <a href="#dart3" class="nav-link">Calculation</a>
+          </li>
+          <li class="nav-item">
+            <a href="#wtc" class="nav-link">Way to Come</a>
+          </li>
+        </il>
+      </div>
+    </div>
+  </nav>
+
+  <div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#slides" data-slide-to="0" class="active"></li>
+      <li data-target="#slides" data-slide-to="1"></li>
+      <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/01.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/02.jpg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/03.jpg" alt="">
+      </div>
+    </div>
+    <a href="#slides" class="carousel-control-prev" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a href="#slides" class="carousel-control-next" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">How to Play Darts</h1>
+      </div>
+      <hr>
+      <div class="col-12">
+        <p class="lead">다트는 정말 재밌고 쉬운 스포츠입니다!</p>
+      </div>
+    </div>
+  <hr class="my-4"> 
+  </div>
+
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-12 col-lg-6">
+        <h2 id="dart1">Dart is...</h2>
+          <p><h3>1.</h3> 다트는 500여 년 전 영국에서 시작된 스포츠로, 영국 병사들이 나무에 빈 술통 뚜껑을 걸어 놓고 <br> 부러진 화살을 던지고 놀며
+            소일거리를 하던 것에서 비롯되었다.
+          </p>
+          <p><h3>2.</h3> 1970년대 이후 영국에서 최초의 다트 프로리그가 열렸으며, 현재 전세계적으로 각종 대회가 펼쳐지고 있다.</p>
+          <p><h3>3.</h3> 최근에는 한국에서도 소프트 다트(기계식 다트)를 기반으로 한 아케이드식 기기를 많이 찾아볼 수 있다.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/img1.jpg" alt="" class="img-fluid" id="pt">
+      </div>
+    </div>
+    <hr class="my-4">
+  </div>  
+
+  <div class="container-fluid padding">
+    <h2 id="dart2">Competitions of Darts</h2>
+    <ul class="accordion">
+      <li>
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#acc01">01 Games</button>
+        <div class="collapse" id="acc01">
+          <p>플레이어가 501, 701, 901 등 n01점을 가지고 시작해, 교대로 다트를 3번씩 던져서 그 합계 점수를
+            빼 먼저 0을 만드는 사람이 이기는 것. 중요한 점은 먼저 0점을 만들면 게임이 끝나기 때문에 비슷한 실력이라면
+            선공 플레이어가 유리하다는 것과 남아있는 점수보다 높은 점수로 득점을 하면 버스트(Bust)라 하여 점수가 던지기
+            전으로 리셋이 된다.
+          </p>
+        </div>
+      </li>
+      <li>
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#acc02">Standard Crickets</button>
+        <div class="collapse" id="acc02">
+          <p>다트 보드의 특정 영역을 마크(Mark)해서 자신이 점유하고, 상대방이 마크해서 득점하고 있는 영역을
+            클로즈(Close)시켜 아무도 득점할 수 없는 상대로 만드는 전략 등을 사용한다.15~20과 가운데의 Bulls-eye만 사용하며, 
+            득점 영역을 맞추면 그 영역에서 싱글은 1마크, 더블은 2마크, 트리플은 3마크를 획득한다. 3마크를 획득한 플레이어는 그 구역을 점유하게 되고,
+            자신이 점유한 영역에서는 자기만 득점할 수 있다. 단, 남이 점유한 영역에 3마크 이상을 맞추거나 남이 내 영역에
+            3마크 이상을 맞출 경우 그 영역은 클로즈되어 아무도 득점할 수 없다. 정해진 라운드 내 가장 점수가 높거나 모든 영역을
+            클로즈 한 플레이어가 승리한다.
+          </p>
+        </div>
+      </li>
+        <li>
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#acc03">Count Up</button>
+        <div class="collapse" id="acc03">
+          <p>앞서 언급한 종목보다 단순하다. 그저 정해진 라운드 내에 가장 높은 점수를 내는 플레이어가 승리하는 게임이다.
+            보통 다트 초보자들이 처음 접할 때 많이 하는 종목이다.
+          </p>
+        </div>
+      </li>
+    </ul>
+  <hr class="my-4">  
+  </div>
+
+  <div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-md-12 col-lg-6">
+        <h2 id="dart3">Darts Point Calculation</h2>
+        <p>싱글 : 빨간색/초록색으로 된 표시가 없는 영역. 영역에 적힌 숫자만큼 점수를 얻는다</p>
+        <p>더블/트리플 : 영역에 적힌 점수의 2배/3배를 획득한다. 보통 크리켓 경기를 진행할 때 많은 사람들이 노리는 영역이다.
+        </p>
+        <p>불스 아이(Bull's Eye) : 다트판의 중심에 있는 빨간 원은 50점, 이를 둘러싸고 있는 초록 원은 25점이다.</p>
+      </div>
+      <div class="col-lg-6">
+        <img src="img/img2.gif" alt="" class="img-fluid">
+      </div>
+    </div>
+    <hr class="my-4">
+  </div>
+
+  <div class="container-fluid padding">
+    <h2 id="wtc">Way to Come</h2>
+    <h5>검색창에 '다트'를 쳐보시면 플레이할 수 있는 샵이 많습니다!</h5>
+    <input id="searchInput" class="controls" type="text" placeholder="Enter a location">
+    <div id="map"></div>
+  <hr class="my-4">
+  </div>
+
+  <footer>
+      <div class="container-fluid padding">
+      <div class="row text-center">
+        <div class="col-md-6">
+          <hr class="light">
+          <h5>제작자</h5>
+          <hr class="light">
+          <p>김진석</p>
+          <p>경영정보학과</p>
+          <p>2011280299</p>
+          <p>madrine27@naver.com</p>
+        </div>
+        <div class="col-md-6">
+          <hr class="light">
+          <h5>후기</h5>
+          <hr class="light">
+          <p>능력이 부족해 추가적인 js/json/ajax 사용은 못했습니다.</p>
+          <p>반응형 웹은 Bootstrap 4를 사용해 구현하였습니다.</p>
+          <p>collapse를 accordion으로 대체해보려 했으나</p>
+          <p>bootstrap 상에서의 충돌로 인해 collapse를 사용했습니다.</p>
+        </div>
+        <div class="col-12" id="footerLogo">
+          <hr class="light-100">
+          <h6>&copy; Korea Univ. Web Application I Final Project</h6>
+          <img src="img/ku.gif" alt="">
+        </div>
+      </div>	
+      </div>
+        
+      </footer>
+
+  <script src="script/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?libraries=places&callback=initMap" async defer></script>
+</body>
+</html>
